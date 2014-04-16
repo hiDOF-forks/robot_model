@@ -13,8 +13,6 @@ catkin_package(
 include_directories(${Boost_INCLUDE_DIR})
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-set(CMAKE_MODULE_PATH  ${PROJECT_SOURCE_DIR}/cmake-extensions/)
-find_package(PkgConfig)
 find_package(COLLADA_DOM 2.3 COMPONENTS 1.5)
 if(COLLADA_DOM_FOUND)
   include_directories(${COLLADA_DOM_INCLUDE_DIRS})
